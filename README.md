@@ -33,21 +33,6 @@ Students will learn:
 
 ---
 
-# Project Structure
-
-ssh_bruteforce_lab/
-│
-├── app.py
-├── README.md
-├── requirements.txt
-├── logs/
-│   └── auth.log
-├── templates/
-│   ├── challenge.html
-│   └── result.html
-└── static/
-
----
 
 # Installation
 
