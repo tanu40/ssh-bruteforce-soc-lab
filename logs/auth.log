@@ -1,0 +1,45 @@
+Jun 10 02:58:01 server CRON[1001]: pam_unix(cron:session): session opened for user root(uid=0)
+Jun 10 02:58:01 server CRON[1001]: pam_unix(cron:session): session closed for user root
+Jun 10 03:00:05 server systemd[1]: Started Daily Cleanup Service.
+Jun 10 03:01:11 server sshd[1100]: Server listening on 0.0.0.0 port 22.
+Jun 10 03:01:11 server sshd[1100]: Server listening on :: port 22.
+Jun 10 03:03:14 server sshd[1120]: Invalid user oracle from 91.210.55.12 port 52111
+Jun 10 03:03:18 server sshd[1121]: Failed password for invalid user oracle from 91.210.55.12 port 52111 ssh2
+Jun 10 03:03:25 server sshd[1122]: Invalid user postgres from 91.210.55.12 port 52119
+Jun 10 03:03:30 server sshd[1123]: Failed password for invalid user postgres from 91.210.55.12 port 52119 ssh2
+Jun 10 03:05:10 server sudo: developer : TTY=pts/0 ; PWD=/home/developer ; USER=root ; COMMAND=/usr/bin/apt update
+Jun 10 03:05:15 server sudo: pam_unix(sudo:session): session opened for user root by developer(uid=0)
+Jun 10 03:05:20 server sudo: pam_unix(sudo:session): session closed for user root
+Jun 10 03:10:02 server sshd[1180]: Failed password for root from 185.220.101.34 port 44512 ssh2
+Jun 10 03:10:04 server sshd[1181]: Failed password for admin from 185.220.101.34 port 44518 ssh2
+Jun 10 03:10:07 server sshd[1182]: Failed password for user from 185.220.101.34 port 44522 ssh2
+Jun 10 03:10:11 server sshd[1183]: Failed password for test from 185.220.101.34 port 44529 ssh2
+Jun 10 03:10:15 server sshd[1184]: Failed password for guest from 185.220.101.34 port 44531 ssh2
+Jun 10 03:10:18 server sshd[1185]: Failed password for support from 185.220.101.34 port 44538 ssh2
+Jun 10 03:10:21 server sshd[1186]: Failed password for admin from 185.220.101.34 port 44542 ssh2
+Jun 10 03:10:24 server sshd[1187]: Failed password for root from 185.220.101.34 port 44548 ssh2
+Jun 10 03:10:28 server sshd[1188]: Failed password for developer from 185.220.101.34 port 44551 ssh2
+Jun 10 03:10:31 server sshd[1189]: Failed password for backup from 185.220.101.34 port 44556 ssh2
+Jun 10 03:10:34 server sshd[1190]: Failed password for test from 185.220.101.34 port 44560 ssh2
+Jun 10 03:10:37 server sshd[1191]: Failed password for root from 185.220.101.34 port 44565 ssh2
+Jun 10 03:10:40 server sshd[1192]: Failed password for admin from 185.220.101.34 port 44570 ssh2
+Jun 10 03:10:43 server sshd[1193]: Failed password for developer from 185.220.101.34 port 44573 ssh2
+Jun 10 03:10:47 server sshd[1194]: Failed password for root from 185.220.101.34 port 44580 ssh2
+Jun 10 03:10:50 server sshd[1195]: Accepted password for developer from 185.220.101.34 port 44585 ssh2
+Jun 10 03:10:51 server sshd[1195]: pam_unix(sshd:session): session opened for user developer(uid=1000)
+Jun 10 03:10:56 server sudo: developer : TTY=pts/1 ; PWD=/home/developer ; USER=root ; COMMAND=/bin/bash
+Jun 10 03:11:02 server sudo: pam_unix(sudo:session): session opened for user root by developer(uid=0)
+Jun 10 03:11:10 server systemd-logind[700]: New session 55 of user developer.
+Jun 10 03:11:25 server sshd[1200]: Received disconnect from 185.220.101.34 port 44585:11: disconnected by user
+Jun 10 03:11:25 server sshd[1200]: Disconnected from user developer 185.220.101.34 port 44585
+Jun 10 03:12:00 server CRON[1210]: pam_unix(cron:session): session opened for user root(uid=0)
+Jun 10 03:12:00 server CRON[1210]: pam_unix(cron:session): session closed for user root
+Jun 10 03:14:14 server sshd[1220]: Invalid user ftp from 203.0.113.77 port 41221
+Jun 10 03:14:20 server sshd[1221]: Failed password for invalid user ftp from 203.0.113.77 port 41221 ssh2
+Jun 10 03:15:45 server systemd[1]: Started Session 56 of user developer.
+Jun 10 03:17:22 server sshd[1230]: Failed password for root from 45.77.21.90 port 51122 ssh2
+Jun 10 03:17:30 server sshd[1231]: Failed password for admin from 45.77.21.90 port 51128 ssh2
+Jun 10 03:18:01 server kernel: Firewall rule updated successfully
+Jun 10 03:19:11 server sshd[1240]: Connection closed by authenticating user root 45.77.21.90 port 51122 [preauth]
+Jun 10 03:20:00 server CRON[1250]: pam_unix(cron:session): session opened for user root(uid=0)
+Jun 10 03:20:00 server CRON[1250]: pam_unix(cron:session): session closed for user root

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Investigation Result</title>
+
+    <style>
+
+        body {
+            background-color: #0d1117;
+            color: #00ff88;
+            font-family: monospace;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #58a6ff;
+        }
+
+        .box {
+            background-color: #161b22;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        a {
+            color: #58a6ff;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>{{ result }}</h1>
+
+<div class="box">
+
+    <p><strong>Attempts:</strong> {{ attempts }}</p>
+
+    <p><strong>Score:</strong> {{ score }}/100</p>
+
+    <p><strong>Time Taken:</strong> {{ elapsed_time }} seconds</p>
+
+</div>
+
+{% if hint %}
+
+<div class="box">
+
+    <h3>Hint</h3>
+
+    <p>{{ hint }}</p>
+
+</div>
+
+{% endif %}
+
+<br>
+
+<a href="/">Try Again</a>
+
+</body>
+</html>
