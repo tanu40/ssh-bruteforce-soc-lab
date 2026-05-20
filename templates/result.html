@@ -1,32 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Investigation Result</title>
 
     <style>
 
         body {
-            background-color: #0d1117;
-            color: #00ff88;
-            font-family: monospace;
-            padding: 30px;
+
+            background-color: #0b0f17;
+            color: #e6edf3;
+
+            font-family: 'Courier New', monospace;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            min-height: 100vh;
+
+            padding: 20px;
+        }
+
+        .result-box {
+
+            width: 100%;
+            max-width: 700px;
+
+            background: #111827;
+
+            border: 1px solid #1f2937;
+
+            padding: 40px;
+
+            border-radius: 16px;
+
+            text-align: center;
+
+            box-shadow: 0 0 25px rgba(0,255,170,0.1);
         }
 
         h1 {
-            color: #58a6ff;
+
+            color: #00ffaa;
+            margin-bottom: 25px;
         }
 
-        .box {
-            background-color: #161b22;
+        .stats {
+
+            margin-top: 25px;
+            text-align: left;
+
+            background: #0d1117;
+
             padding: 20px;
+
             border-radius: 10px;
-            margin-top: 20px;
+
+            border: 1px solid #30363d;
+        }
+
+        .stats p {
+
+            margin-bottom: 12px;
+        }
+
+        .hint {
+
+            margin-top: 25px;
+
+            background: rgba(255, 204, 0, 0.08);
+
+            border: 1px solid #ffcc00;
+
+            padding: 18px;
+
+            border-radius: 10px;
         }
 
         a {
-            color: #58a6ff;
+
+            display: inline-block;
+
+            margin-top: 30px;
+
+            padding: 14px 24px;
+
+            background: linear-gradient(90deg, #00ffaa, #0077ff);
+
+            color: black;
+
+            text-decoration: none;
+
+            border-radius: 10px;
+
+            font-weight: bold;
         }
 
     </style>
@@ -35,33 +107,39 @@
 
 <body>
 
-<h1>{{ result }}</h1>
+<div class="result-box">
 
-<div class="box">
+    <h1>{{ result }}</h1>
 
-    <p><strong>Attempts:</strong> {{ attempts }}</p>
+    <div class="stats">
 
-    <p><strong>Score:</strong> {{ score }}/100</p>
+        <p><strong>Attempts:</strong> {{ attempts }}</p>
 
-    <p><strong>Time Taken:</strong> {{ elapsed_time }} seconds</p>
+        <p><strong>Score:</strong> {{ score }}/100</p>
+
+        <p><strong>Investigation Time:</strong> {{ elapsed_time }} seconds</p>
+
+    </div>
+
+    {% if hint %}
+
+    <div class="hint">
+
+        <h3>Hint</h3>
+
+        <p>{{ hint }}</p>
+
+    </div>
+
+    {% endif %}
+
+    <a href="/reset">
+
+        Restart Investigation
+
+    </a>
 
 </div>
-
-{% if hint %}
-
-<div class="box">
-
-    <h3>Hint</h3>
-
-    <p>{{ hint }}</p>
-
-</div>
-
-{% endif %}
-
-<br>
-
-<a href="/">Try Again</a>
 
 </body>
 </html>
